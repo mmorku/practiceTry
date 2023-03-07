@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "a50023d3-df0e-4920-93a0-bb0d1936e863",
+		"name": "spring-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6765997"
+	},
+	"item": [
+		{
+			"name": "get all students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/student",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "students returned",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/student",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"student"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 19:25:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Vardas-0\",\n        \"lastname\": \"Pavarde-0\"\n    },\n    {\n        \"name\": \"Vardas-1\",\n        \"lastname\": \"Pavarde-1\"\n    },\n    {\n        \"name\": \"Vardas-2\",\n        \"lastname\": \"Pavarde-2\"\n    },\n    {\n        \"name\": \"Vardas-3\",\n        \"lastname\": \"Pavarde-3\"\n    },\n    {\n        \"name\": \"Vardas-4\",\n        \"lastname\": \"Pavarde-4\"\n    },\n    {\n        \"name\": \"Vardas-5\",\n        \"lastname\": \"Pavarde-5\"\n    },\n    {\n        \"name\": \"Vardas-6\",\n        \"lastname\": \"Pavarde-6\"\n    },\n    {\n        \"name\": \"Vardas-7\",\n        \"lastname\": \"Pavarde-7\"\n    },\n    {\n        \"name\": \"Vardas-8\",\n        \"lastname\": \"Pavarde-8\"\n    },\n    {\n        \"name\": \"Vardas-9\",\n        \"lastname\": \"Pavarde-9\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "get student by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/student/:studentId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"student",
+						":studentId"
+					],
+					"variable": [
+						{
+							"key": "studentId",
+							"value": "2",
+							"description": "ID of the student"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "student returned",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/student/:studentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"student",
+								":studentId"
+							],
+							"variable": [
+								{
+									"key": "studentId",
+									"value": "2",
+									"description": "ID of the student"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 18:53:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Vardas-1\",\n    \"lastname\": \"Pavarde-1\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get student by id name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/student/:studentId/name",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"student",
+						":studentId",
+						"name"
+					],
+					"variable": [
+						{
+							"key": "studentId",
+							"value": "2",
+							"description": "ID of the student"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "student name returned",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/student/:studentId/name",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"student",
+								":studentId",
+								"name"
+							],
+							"variable": [
+								{
+									"key": "studentId",
+									"value": "2",
+									"description": "ID of the student"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 18:55:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Vardas-1"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}

@@ -1,0 +1,22 @@
+#addItemForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 3rem auto;
+}
+
+#addItemForm h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#addItemForm .actions {
+  display: flex;
+  justify-content: center;
+}
+
+#addItemForm button {
+  margin: 0.5rem 1rem;
+  width: 40%;
+  margin: 10px;
+}
